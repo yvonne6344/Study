@@ -1,0 +1,10 @@
+『AngularJS 從零開始』
+
+*要使用 AngularJS，記得先載入 AngularJS Library！
+
+1.在官網下載檔案包。
+https://angularjs.org/
+
+2.直接使用CDN來連結。
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/ angular.min.js "></script>
+
