@@ -35,3 +35,40 @@ https://angularjs.org/
 <div ng-app="" ng-init="names=['Apple','Banana','Orange']">
  
 </div>
+
+
+3.ng-model
+使用ng-model指令可以把數據綁定到HTML元素，實現model和view的雙向綁定。
+
+例：使用ng-model指令對數據進行綁定。
+<div ng-app="">
+ 
+請輸入文字：<input type="text" ng-model="name" />
+您輸入的文字為： {{ name }}
+ 
+</div>
+
+
+4.ng-bind
+ng-bind 是在 AngularJS 解析完才顯示數據。
+
+例：
+<div ng-app="">
+    請輸入您的名字：<input type="text" ng-model="name" />
+    Hello, <span ng-bind="name"></span>
+</div>
+
+
+5.ng-click
+按鈕或超連結都可以用ng-click指令來實現綁定。
+ng-click指令將DOM元素的滑鼠點擊事件綁定到一個方法上，當瀏覽器在該DOM元素上，滑鼠觸發點擊事件時，Angular就會調用相對應的方法。
+
+例：
+<div ng-app="" ng-init="click=false">
+    <button ng-click="click= !click">隱藏/顯示</button>
+    <div ng-hide="click">
+        請輸入名稱：<input type="text" ng-model="name" />
+        Hello <span ng-bind="name"></span> 
+    </div>
+</div>
+
