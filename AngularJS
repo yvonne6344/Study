@@ -8,3 +8,30 @@ https://angularjs.org/
 2.直接使用CDN來連結。
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/ angular.min.js "></script>
 
+【指令】
+1.ng-app
+以ng-app指令的標籤為根節點，編譯其中的DOM。
+
+例：div 元素為 angularJS 的所有者，在 div 內的指令都會被 angularJS 所編譯、解析。
+<div ng-app="">
+
+</div>  
+
+
+2.ng-init
+定義初始值。
+
+例：將變數賦值
+<div ng-app="" ng-init="name='Hello World'">
+
+</div>
+
+除了賦值為字串，也可以賦值為數字、陣列、物件，而且可以賦值多個變量。
+例：
+<div ng-app="" ng-init="quantity=1;price=10">
+ 
+</div>
+
+<div ng-app="" ng-init="names=['Apple','Banana','Orange']">
+ 
+</div>
